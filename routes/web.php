@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 //collego una rotta che avra come url '/',
 //Questa rotta viene gestita dal controller PageController,
 //Piu precisamente dalla 'public function index()' all'interno di PageController
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [PageController::class, 'index'])->name('welcome');

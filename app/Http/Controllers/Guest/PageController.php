@@ -13,9 +13,9 @@ class PageController extends Controller
 {
     //funzione che gestisce la rotta
     public function index(){
-        $newMovie = new Movie();
+
         //metodo statico con il quale prendiamo tutto quello che sta nella tabella Movies
         $movies = Movie::all();
-        return view('welcome');
+        return view('welcome', compact('movies'));
     }
 }
