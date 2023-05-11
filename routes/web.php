@@ -1,5 +1,6 @@
 <?php
-
+//AGGIUNGO MANUALMENTE LA USE Al CONTROLLER PageController
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+//collego una rotta che avra come url '/',
+//Questa rotta viene gestita dal controller PageController,
+//Piu precisamente dalla 'public function index()' all'interno di PageController
+Route::get('/', [PageController::class, 'index']);
