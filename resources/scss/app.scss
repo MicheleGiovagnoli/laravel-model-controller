@@ -1,1 +1,37 @@
 @import '~bootstrap/scss/bootstrap';
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navColor {
+    background-color: rgb(111, 44, 243);
+}
+
+.myItem:hover {
+    background-color: rgb(33, 37, 41);
+    transition: all 0.5s ease;
+    font-weight: bolder;
+}
+
+.container {
+    width: 80%;
+    background-color: rgb(33, 37, 41);
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .myCard {
+        background-color: rgb(53, 53, 53);
+        color: whitesmoke;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .myCard:hover {
+        background-color: rgba(53, 53, 53, 0.5);
+        transition: all 0.5s ease;
+    }
+}
