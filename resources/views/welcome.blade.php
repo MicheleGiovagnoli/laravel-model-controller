@@ -15,8 +15,17 @@
 
 </head>
 
-<body>
-    <h1>Welcome</h1>
+<body class="d-flex flex-wrap justify-content-around">
+    @foreach ($movies as $movie)
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{$movie->title}}</h5>
+                <p class="card-text">{{$movie->nationality}}</p>
+                <p class="card-text">{{$movie->date}}</p>
+                <p class="card-text">{{$movie->vote}}</p>
+            </div>
+        </div>
+    @endforeach
 </body>
 
 </html>
