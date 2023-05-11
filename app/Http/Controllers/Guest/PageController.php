@@ -18,4 +18,8 @@ class PageController extends Controller
         $movies = Movie::all();
         return view('welcome', compact('movies'));
     }
+    public function info(){
+        $movies = Movie::all();
+        return view('infoFilm', compact('movies'));
+    }
 }

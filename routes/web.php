@@ -19,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 //Questa rotta viene gestita dal controller PageController,
 //Piu precisamente dalla 'public function index()' all'interno di PageController
 Route::get('/', [PageController::class, 'index'])->name('welcome');
+
+Route::get('/info', [PageController::class, 'info'])->name('info');
